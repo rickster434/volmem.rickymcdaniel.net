@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://volmem.rickymcdaniel.net/sitemap.xml
