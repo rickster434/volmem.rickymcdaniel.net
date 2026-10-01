@@ -206,16 +206,17 @@ figure { margin: 0; }
 .perm-note b small { font-weight: 600; color: var(--ink-2); }
 .perm-note span { color: var(--ink-2); font-size: var(--fs-0); line-height: 1.55; display: block; }
 
-@media (min-width: 900px) {
+@media (min-width: 1080px) {
   /* Notes sit beside the picture at the height of their switch, with a line pointing at it. */
   .perm-map { --img: 340px; --gap: 44px; display: block; width: calc(var(--img) + 2 * (300px + var(--gap))); margin-bottom: 4rem; }
   .perm-img { width: var(--img); margin: 0 auto; }
   .perm-dot { display: none; }
-  .perm-note { position: absolute; width: 300px; top: calc(var(--y) * 1%); transform: translateY(-1.05rem); }
+  /* --lift raises a note above its switch (the pointer still lands on the switch) so tall notes don't collide. */
+  .perm-note { position: absolute; width: 300px; top: calc(var(--y) * 1% - var(--lift, 0px)); transform: translateY(-1.05rem); }
   .perm-note.left { left: 0; }
   .perm-note.right { right: 0; }
-  .perm-note::after { content: ""; position: absolute; top: 1.05rem; height: 2px; background: var(--accent); }
-  .perm-note::before { content: ""; position: absolute; top: calc(1.05rem - 4px); width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent); }
+  .perm-note::after { content: ""; position: absolute; top: calc(1.05rem + var(--lift, 0px)); height: 2px; background: var(--accent); }
+  .perm-note::before { content: ""; position: absolute; top: calc(1.05rem + var(--lift, 0px) - 4px); width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent); }
   /* Left notes point at the switch's label; right notes point at the switch itself. */
   .perm-note.left::after { left: 100%; width: calc(var(--gap) + 16px); }
   .perm-note.left::before { left: calc(100% + var(--gap) + 16px - 5px); }
