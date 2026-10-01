@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Volmem – Volume Memory</title>
-<meta name="description" content="Volmem remembers the media volume you set in each Android app and on each headset, and puts it back when that app comes to the front. A memory, not a mixer. No internet permission, no ads, $4.99 once.">
+<meta name="description" content="Volmem remembers the volume you set for each Android app and puts it back when that app plays or opens. The app that's playing keeps its volume while you use others. No internet permission, no ads, $4.99 once.">
 <link rel="canonical" href="https://volmem.rickymcdaniel.net/">
 <meta name="theme-color" content="#1F3A5F">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Volmem">
 <meta property="og:title" content="Volmem – Volume Memory">
-<meta property="og:description" content="Every app opens at the volume you chose. Volmem remembers the level per app and per headset and puts it back when that app comes to the front.">
+<meta property="og:description" content="Set each app's volume once. Volmem puts it back whenever that app plays or opens.">
 <meta property="og:url" content="https://volmem.rickymcdaniel.net/">
 <meta property="og:image" content="https://volmem.rickymcdaniel.net/assets/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -30,8 +30,7 @@
   <div class="wrap">
     <a class="brand" href="/"><img src="assets/icon.svg" alt="" width="32" height="32">Volmem</a>
     <nav class="nav" aria-label="Page">
-      <a href="#features">Features</a>
-      <a href="#how" class="hide-sm">How it works</a>
+      <a href="#how">How it works</a>
       <a href="#limits">Limits</a>
       <a href="#pricing" class="hide-sm">Pricing</a>
       <a href="#faq" class="hide-sm">FAQ</a>
@@ -45,8 +44,8 @@
     <div>
       <img class="hero-icon" src="assets/icon.svg" alt="Volmem app icon" width="96" height="96">
       <h1><span class="app-title">Volmem</span></h1>
-      <p class="tagline">Set it once by ear. It's already there next time you open the app.</p>
-      <p class="lead">Volmem remembers the media volume you pick while each app is on screen and puts it back the moment that app comes to the front again. Nothing to configure. It learns as you use the phone.</p>
+      <p class="tagline">Set each app's volume once. It's there every time.</p>
+      <p class="lead">Audiobooks at 40. Music at 70. That one game at 20. Volmem puts each app's volume back whenever that app plays or comes to the screen. The app that's playing keeps its volume while you use other apps.</p>
       <div class="cta-row">
         <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.rickymcdaniel.volmem"><img src="assets/google-play-badge.png" alt="Get it on Google Play" width="646" height="250"></a>
         <a class="btn btn-ghost" href="#limits">What it can and cannot do</a>
@@ -54,27 +53,32 @@
       <p class="cta-note">Android 10 and newer · Free for 3 apps · $4.99 once to unlock everything · No ads, no subscription, no internet permission</p>
     </div>
     <figure class="hero-shot">
-      <img src="assets/shot-01.webp" alt="Volmem storyboard: the Home screen showing Spotify in front at 100% and recent apps with their remembered levels" width="540" height="960" fetchpriority="high">
+      <img src="assets/shot-main.webp" alt="Volmem's main screen: a list of apps, each with its own volume slider, and the Enable Volmem Control switch at the bottom" width="540" height="1170" fetchpriority="high">
     </figure>
   </div>
 </section>
 
-<section id="story">
+<section id="how">
   <div class="wrap">
-    <p class="eyebrow center" style="display:block">What it looks like</p>
-    <h2 class="center">A memory, not a mixer</h2>
+    <p class="eyebrow">How it works</p>
+    <h2>Add your apps. Set them once.</h2>
+    <ol class="steps">
+      <li><h3>Turn it on.</h3><p>Flip "Enable Volmem Control". Volmem takes you straight to the two Android settings it needs, then turns on by itself.</p></li>
+      <li><h3>Tap + and pick your apps.</h3><p>Each app gets a slider. Set it there, or use the volume keys while the app is playing.</p></li>
+      <li><h3>That's it.</h3><p>Whenever an app on your list plays or opens, its volume comes back. Everything else keeps your normal volume.</p></li>
+    </ol>
     <div class="shots">
       <figure class="shot">
-        <img src="assets/shot-02.webp" alt="Storyboard: Set it once by ear, it remembers. The YouTube detail screen with the learned media level" width="540" height="960" loading="lazy">
-        <figcaption>Change the volume the way you always do. Volmem learns the level you settle on.</figcaption>
+        <img src="assets/shot-app.webp" alt="An app's page: its volume slider, a separate volume per Bluetooth device, and Plays during Do Not Disturb" width="540" height="1170" loading="lazy">
+        <figcaption>A separate volume per Bluetooth headset, speaker or car.</figcaption>
       </figure>
       <figure class="shot">
-        <img src="assets/shot-03.webp" alt="Storyboard: Headphones, car, intercom, each remembered. The Devices screen listing levels per audio device" width="540" height="960" loading="lazy">
-        <figcaption>Every headset, car or intercom keeps its own levels.</figcaption>
+        <img src="assets/shot-add.webp" alt="The + list: pick an installed app to add" width="540" height="1170" loading="lazy">
+        <figcaption>Tap + and pick an app. Done.</figcaption>
       </figure>
       <figure class="shot">
-        <img src="assets/shot-04.webp" alt="Storyboard: Two permissions, plain English. The Setup screen with Usage access and Nearby devices" width="540" height="960" loading="lazy">
-        <figcaption>Two permissions, explained on screen before you grant them.</figcaption>
+        <img src="assets/shot-settings.webp" alt="Settings: Usage access, Notification access, Nearby devices, Mute during Do Not Disturb" width="540" height="1170" loading="lazy">
+        <figcaption>Each permission is one switch that goes straight to the right Android setting.</figcaption>
       </figure>
     </div>
   </div>
@@ -82,76 +86,48 @@
 
 <section id="features">
   <div class="wrap">
-    <p class="eyebrow">Features</p>
-    <h2>Nothing to configure. Just use your phone.</h2>
-    <p class="lead">There are no rules to write and no profiles to build. Tap Start watching once, then change the volume like you always do. Volmem does the remembering.</p>
+    <p class="eyebrow">Also</p>
+    <h2>The small things that make it work</h2>
     <div class="grid grid-2">
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 8v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg></div>
-        <h3>It learns as you go.</h3>
-        <p>Adjust the volume the way you always do, leave it for three seconds, and Volmem remembers that level for the app in front. No rules to write, no lists to fill in.</p>
-      </div>
-      <div class="card">
-        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm.5 5v5.2l3.5 2.1-.8 1.2L11 13V7h1.5z"/></svg></div>
-        <h3>Back where you left it.</h3>
-        <p>Open the app again and, about a second later, the volume is what you chose last time. Podcasts quiet, the kids' game loud, navigation louder.</p>
+        <h3>The playing app keeps its volume.</h3>
+        <p>Music in the background stays at the music's volume while you scroll, read or text. When nothing plays, the app on screen decides.</p>
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-9 9v7a2 2 0 0 0 2 2h3v-8H5v-1a7 7 0 0 1 14 0v1h-3v8h3a2 2 0 0 0 2-2v-7a9 9 0 0 0-9-9z"/></svg></div>
-        <h3>One memory per headset, car or intercom.</h3>
-        <p>Optional. Let Volmem see nearby devices and each Bluetooth headset, car stereo or helmet intercom keeps its own set of levels, separate from the phone speaker.</p>
+        <h3>Bluetooth devices.</h3>
+        <p>Give an app its own volume on each paired headset, speaker or car. The phone speaker keeps its own.</p>
       </div>
       <div class="card">
-        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 5h16v2H4zm0 6h16v2H4zm0 6h10v2H4z"/></svg></div>
-        <h3>Everything else.</h3>
-        <p>One default level for apps you have not set yet, so a brand-new app does not blast.</p>
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM4 12a8 8 0 0 1 12.9-6.3L5.7 16.9A7.9 7.9 0 0 1 4 12zm8 8a7.9 7.9 0 0 1-4.9-1.7L18.3 7.1A8 8 0 0 1 12 20z"/></svg></div>
+        <h3>Do Not Disturb.</h3>
+        <p>Mute every app during Do Not Disturb except the ones you allow.</p>
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 4h7v7H4zm9 0h7v7h-7zM4 13h7v7H4zm9 0h7v7h-7z"/></svg></div>
-        <h3>A tile and a slider.</h3>
-        <p>A Quick Settings tile opens a small panel with one slider: set it for this app, or just this once.</p>
-      </div>
-      <div class="card">
-        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm0 2a3 3 0 0 1 3 3v3H9V7a3 3 0 0 1 3-3zm0 9a2 2 0 0 1 1 3.7V19h-2v-2.3A2 2 0 0 1 12 13z"/></svg></div>
-        <h3>Lock it, or leave it alone.</h3>
-        <p>Lock an app at a level and the volume keys snap back within a second. Or tell Volmem not to learn a particular app at all.</p>
+        <h3>A Quick Settings tile.</h3>
+        <p>Turn Volmem on or off without opening it.</p>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="how">
-  <div class="wrap">
-    <p class="eyebrow">How it works</p>
-    <h2>Set it once. It is there next time.</h2>
-    <ol class="steps">
-      <li><h3>Allow Usage access.</h3><p>Volmem shows you exactly what it reads and saves, then opens the Android setting. That is how it knows which app is in front.</p></li>
-      <li><h3>Tap Start watching.</h3><p>A small notification stays up while it runs, with a Stop button. Volmem only ever starts when you tap.</p></li>
-      <li><h3>Use your phone.</h3><p>Set the volume by ear in each app. From then on it is already there when you come back.</p></li>
-    </ol>
   </div>
 </section>
 
 <section id="limits">
-  <div class="wrap limits-grid">
+  <div class="wrap wrap-narrow">
     <div class="callout">
       <p class="eyebrow">Read this first</p>
       <h2><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 1 21h22L12 2zm0 6 6.5 11h-13L12 8zm-1 4v4h2v-4h-2zm0 5v2h2v-2h-2z"/></svg>What it can and cannot do</h2>
-      <p><strong>A memory, not a mixer.</strong> Android has one media volume for the whole phone. Volmem cannot make two apps play at different levels at the same time. If music keeps playing in the background while a game is in front, the music plays at the game's level.</p>
+      <p><strong>A memory, not a mixer.</strong> Android has one media volume for the whole phone. Volmem switches it for you. It can't play two apps at different volumes at the same time.</p>
       <ul>
-        <li>It knows which app is <strong>in front</strong>, not which app is making sound.</li>
-        <li>The level switches about a second after you switch apps.</li>
-        <li>Media volume only, unless you opt in to ring and notification volume. Alarm and call volume are never touched.</li>
-        <li>It works while the phone is unlocked. While locked, the last level stays.</li>
-        <li>After a reboot or an app update it is paused and says so. One tap resumes it.</li>
-        <li>Some TV boxes and car units have fixed volume. Volmem cannot set levels there.</li>
+        <li>Media volume only. Ring, notification, alarm and call volume are never touched.</li>
+        <li>The volume switches about a second after the app changes.</li>
+        <li>Nothing changes while the phone is locked.</li>
+        <li>After a restart, one tap turns Volmem back on. Android requires that.</li>
+        <li>Apps that don't report what they play (most games, videos in a social feed) follow the app on screen.</li>
+        <li>Some TV boxes and car units have fixed volume. Volmem can't change it there.</li>
       </ul>
-      <p style="margin:1rem 0 0">If your phone maker already has a real per-app mixer (some Samsung, Motorola, Xiaomi, OnePlus and realme phones do), Volmem tells you on the Setup screen.</p>
     </div>
-    <figure class="shot limits-shot">
-      <img src="assets/shot-06.webp" alt="Storyboard: A memory, not a mixer. Android has one media volume, so the level switches about a second after you switch apps" width="540" height="960" loading="lazy">
-      <figcaption>One media volume. The level follows the app in front.</figcaption>
-    </figure>
   </div>
 </section>
 
@@ -159,28 +135,26 @@
   <div class="wrap">
     <p class="eyebrow">Pricing</p>
     <h2>Pay once. No subscription, no ads.</h2>
-    <p class="lead">Try it free with three apps. Unlock everything for a one-time purchase through Google Play. Levels never reset.</p>
     <div class="price-grid">
       <div class="price">
         <span class="pill">Free</span>
         <div class="amount">$0</div>
-        <p class="muted">Volmem remembers 3 apps, forever.</p>
+        <p class="muted">Three apps, forever.</p>
         <ul>
-          <li>Learns as you go, no rules to write</li>
-          <li>Quick Settings tile and slider panel</li>
-          <li>Honest Watching / Paused status</li>
-          <li>Export your levels as a file</li>
+          <li>Each app's volume, set once</li>
+          <li>The playing app keeps its volume</li>
+          <li>Mute during Do Not Disturb</li>
+          <li>Quick Settings tile</li>
         </ul>
       </div>
       <div class="price featured">
         <span class="pill">Unlock everything</span>
         <div class="amount">$4.99 <small>once</small></div>
-        <p class="muted">Paid through Google Play, kept forever on your Google account. No subscription, no ads, no Pro package.</p>
+        <p class="muted">Paid through Google Play and kept on your Google account.</p>
         <ul>
           <li>Everything in Free</li>
           <li>Unlimited apps</li>
-          <li>Separate levels per headset, car or intercom</li>
-          <li>The lock switch</li>
+          <li>A separate volume per Bluetooth device</li>
         </ul>
       </div>
     </div>
@@ -192,10 +166,12 @@
     <p class="eyebrow">FAQ</p>
     <h2>Questions people ask</h2>
     <div class="faq">
-      <details><summary>Can it play Spotify quietly while my game is loud?</summary><p>No, and neither can any app on stock Android without root. There is one media volume. Volmem puts back the level you chose for whichever app is in front and switches it when you switch apps.</p></details>
-      <details><summary>Why does it need Usage access?</summary><p>It is the only way to learn which app is on screen without an accessibility service. Volmem reads just the app's name, keeps it on your phone, and never sends it anywhere. It has no internet permission, so it could not even if it wanted to.</p></details>
-      <details><summary>Why is there a notification all the time?</summary><p>Android requires a visible notification for anything that keeps running while you use other apps. It shows the app in front and its level, and has a Stop button. Tap Stop and Volmem stops.</p></details>
-      <details><summary>Will it drain the battery?</summary><p>It asks Android which app is in front about once a second and sets the volume when that changes. It does not read the screen, record audio or keep the CPU awake. If your phone's battery manager stops it, Volmem says Paused rather than pretending to run.</p></details>
+      <details><summary>Can Spotify play quietly while my game is loud?</summary><p>Not at the same moment. Stock Android has one media volume. But if Spotify is the app playing, it keeps its volume while you use other apps. When a game or video takes over the sound, that app's volume comes in.</p></details>
+      <details><summary>Why does it need Usage access?</summary><p>To see which app is on screen. It's the only way to do that without an accessibility service.</p></details>
+      <details><summary>Why does it need Notification access?</summary><p>Android tells only apps with Notification access which app is playing. Volmem asks Android for no notifications at all and never reads them.</p></details>
+      <details><summary>Why is there a notification?</summary><p>Android requires one for anything that keeps working while you use other apps. It's silent and minimized, and you can hide it in Volmem's settings.</p></details>
+      <details><summary>Will it drain the battery?</summary><p>It checks about once a second, only while the screen is on and unlocked, and does nothing while the phone is locked. It doesn't read the screen, record audio or use the internet.</p></details>
+      <details><summary>Does anything leave my phone?</summary><p>No. Volmem has no internet permission, so it can't send anything anywhere.</p></details>
     </div>
   </div>
 </section>
@@ -204,14 +180,12 @@
   <div class="wrap">
     <p class="eyebrow">Permissions</p>
     <h2>Permissions in plain words</h2>
-    <p class="lead">Two permissions do the job. Everything else is optional and explained on screen before Android asks.</p>
     <ul class="perms">
-      <li><b>Usage access</b><span>To see which app is in front. Reads only the app's name; stored on the phone, never sent anywhere.</span></li>
-      <li><b>Notifications and a foreground service</b><span>The "Volmem is watching" notification with its Stop button, and the "Paused after restart" notice.</span></li>
-      <li><b>Run at startup</b><span>Only to post "Paused after restart. Tap to resume." It never starts watching by itself.</span></li>
-      <li><b>Nearby devices</b><span>Optional. To tell your headsets and speakers apart so each keeps its own levels.</span></li>
-      <li><b>Do Not Disturb access</b><span>Optional. Android requires it before an app may change ring or notification volume. Asked only if you opt in.</span></li>
-      <li class="no"><b>Not requested</b><span>Internet, accessibility service, draw over other apps, notification listener, storage, location, microphone.</span></li>
+      <li><b>Usage access</b><span>To see which app is on screen.</span></li>
+      <li><b>Notification access</b><span>To see which app is playing. No notifications are received or read.</span></li>
+      <li><b>Nearby devices</b><span>Optional. To tell your Bluetooth devices apart.</span></li>
+      <li><b>Notifications</b><span>"Volmem is on", and "Volmem stopped" after a restart.</span></li>
+      <li class="no"><b>Not requested</b><span>Internet, accessibility service, draw over other apps, Do Not Disturb access, storage, location, microphone.</span></li>
     </ul>
   </div>
 </section>
